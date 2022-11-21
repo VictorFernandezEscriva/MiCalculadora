@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoPantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/numeroUnoBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="1"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/numeroDosBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <Button
+        android:id="@+id/numeroDosBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="2"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/numeroTresBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numeroUnoBtn"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <Button
+        android:id="@+id/numeroTresBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="3"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numeroDosBtn"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <Button
+        android:id="@+id/numeroCuatroBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="4"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/numeroUnoBtn"
+        app:layout_constraintEnd_toStartOf="@+id/numeroCincoBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/numeroCincoBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="5"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/numeroCuatroBtn"
+        app:layout_constraintEnd_toStartOf="@+id/numeroSeisBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numeroCuatroBtn"
+        app:layout_constraintTop_toTopOf="@+id/numeroCuatroBtn" />
+
+    <Button
+        android:id="@+id/numeroSeisBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="6"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@+id/numeroCincoBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numeroCincoBtn"
+        app:layout_constraintTop_toTopOf="@+id/numeroCincoBtn" />
+
+    <Button
+        android:id="@+id/numeroSieteBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="7"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/numeroCuatroBtn"
+        app:layout_constraintEnd_toStartOf="@+id/numeroOchoBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/numeroOchoBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="8"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/numeroSieteBtn"
+        app:layout_constraintEnd_toStartOf="@+id/numeroNueveBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numeroSieteBtn"
+        app:layout_constraintTop_toTopOf="@+id/numeroSieteBtn" />
+
+    <Button
+        android:id="@+id/numeroNueveBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="9"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/numeroOchoBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numeroOchoBtn"
+        app:layout_constraintTop_toTopOf="@+id/numeroOchoBtn" />
+
+    <Button
+        android:id="@+id/multiplicarBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@+id/numeroSieteBtn"
+        app:layout_constraintEnd_toStartOf="@+id/sumarBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sumarBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplicarBtn"
+        app:layout_constraintEnd_toStartOf="@+id/restarBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/multiplicarBtn"
+        app:layout_constraintTop_toTopOf="@+id/multiplicarBtn" />
+
+    <Button
+        android:id="@+id/restarBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/sumarBtn"
+        app:layout_constraintEnd_toStartOf="@+id/dividirBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sumarBtn"
+        app:layout_constraintTop_toTopOf="@+id/sumarBtn" />
+
+    <Button
+        android:id="@+id/dividirBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/restarBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/restarBtn"
+        app:layout_constraintTop_toTopOf="@+id/restarBtn" />
+
+    <Button
+        android:id="@+id/resultadobtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="="
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <TextView
+        android:id="@+id/pantallaText"
+        android:layout_width="310dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <Button
+        android:id="@+id/ACBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="AC"
+        app:layout_constraintBottom_toBottomOf="@+id/cosBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cosBtn"
+        app:layout_constraintTop_toTopOf="@+id/cosBtn" />
+
+    <Button
+        android:id="@+id/sinBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="sin"
+        app:layout_constraintBottom_toBottomOf="@+id/tanBtn"
+        app:layout_constraintEnd_toStartOf="@+id/cosBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tanBtn"
+        app:layout_constraintTop_toTopOf="@+id/tanBtn" />
+
+    <Button
+        android:id="@+id/cosBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="cos"
+        app:layout_constraintBottom_toBottomOf="@+id/sinBtn"
+        app:layout_constraintEnd_toStartOf="@+id/ACBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sinBtn"
+        app:layout_constraintTop_toTopOf="@+id/sinBtn" />
+
+    <Button
+        android:id="@+id/tanBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="tan"
+        app:layout_constraintBottom_toTopOf="@+id/multiplicarBtn"
+        app:layout_constraintEnd_toStartOf="@+id/sinBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
